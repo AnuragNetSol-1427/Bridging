@@ -11,7 +11,7 @@ const index = () => {
           });
     }
     return (
-        <View style={{ borderWidth: 1, borderColor: 'black', alignItems: 'center' }}>
+        <View style={styles.parentContainer}>
             <Pressable style={styles.btnContainer} onPress={() => onPressBtnDateTimePickerOpen()}>
                 <Text style={styles.btnText}>Open Date and Time Picker</Text>
             </Pressable>
@@ -28,6 +28,11 @@ const index = () => {
 export default index
 
 const styles = StyleSheet.create({
+    parentContainer: { 
+        // borderWidth: 1, 
+        // borderColor: 'black', 
+        alignItems: 'center' 
+    },
     btnContainer: {
         borderWidth: 1,
         padding: 10,

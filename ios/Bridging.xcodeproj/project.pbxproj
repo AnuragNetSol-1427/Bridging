@@ -12,10 +12,10 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		753F37782C1851D60089B92D /* ToastIos.m in Sources */ = {isa = PBXBuildFile; fileRef = 753F37772C1851D60089B92D /* ToastIos.m */; };
+		753F377A2C1851EF0089B92D /* ToastIos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753F37792C1851EF0089B92D /* ToastIos.swift */; };
 		755240582C16D951008A1EB2 /* DatePickerIos.m in Sources */ = {isa = PBXBuildFile; fileRef = 755240572C16D951008A1EB2 /* DatePickerIos.m */; };
 		7552405A2C16D97C008A1EB2 /* DatePickerIos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755240592C16D97C008A1EB2 /* DatePickerIos.swift */; };
-		758271852C1718F700F02EFA /* ToastIos.m in Sources */ = {isa = PBXBuildFile; fileRef = 758271842C1718F700F02EFA /* ToastIos.m */; };
-		758271872C17192300F02EFA /* ToastIos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758271862C17192300F02EFA /* ToastIos.swift */; };
 		75B9A05C2C1734C000443A96 /* TimePickerIos.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B9A05B2C1734C000443A96 /* TimePickerIos.m */; };
 		75B9A05E2C1734E500443A96 /* TimePickerIos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B9A05D2C1734E500443A96 /* TimePickerIos.swift */; };
 		75B9A0602C17376800443A96 /* DateTimeBothPickerIos.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B9A05F2C17376800443A96 /* DateTimeBothPickerIos.m */; };
@@ -48,10 +48,10 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Bridging/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = Bridging/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		2EEEA0E4F72D9FAE53BDEEF2 /* Pods-Bridging-BridgingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bridging-BridgingTests.release.xcconfig"; path = "Target Support Files/Pods-Bridging-BridgingTests/Pods-Bridging-BridgingTests.release.xcconfig"; sourceTree = "<group>"; };
+		753F37772C1851D60089B92D /* ToastIos.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToastIos.m; sourceTree = "<group>"; };
+		753F37792C1851EF0089B92D /* ToastIos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastIos.swift; sourceTree = "<group>"; };
 		755240572C16D951008A1EB2 /* DatePickerIos.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatePickerIos.m; sourceTree = "<group>"; };
 		755240592C16D97C008A1EB2 /* DatePickerIos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerIos.swift; sourceTree = "<group>"; };
-		758271842C1718F700F02EFA /* ToastIos.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToastIos.m; sourceTree = "<group>"; };
-		758271862C17192300F02EFA /* ToastIos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastIos.swift; sourceTree = "<group>"; };
 		75B6C0D52C11CB020085C7E1 /* Bridging-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Bridging-Header.h"; sourceTree = "<group>"; };
 		75B9A05B2C1734C000443A96 /* TimePickerIos.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimePickerIos.m; sourceTree = "<group>"; };
 		75B9A05D2C1734E500443A96 /* TimePickerIos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerIos.swift; sourceTree = "<group>"; };
@@ -106,6 +106,7 @@
 		13B07FAE1A68108700A75B9A /* Bridging */ = {
 			isa = PBXGroup;
 			children = (
+				753F37762C1851B20089B92D /* Modules */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -115,14 +116,6 @@
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
 				96545DB8345C57775E0B9784 /* PrivacyInfo.xcprivacy */,
 				75B6C0D52C11CB020085C7E1 /* Bridging-Bridging-Header.h */,
-				755240572C16D951008A1EB2 /* DatePickerIos.m */,
-				755240592C16D97C008A1EB2 /* DatePickerIos.swift */,
-				758271842C1718F700F02EFA /* ToastIos.m */,
-				758271862C17192300F02EFA /* ToastIos.swift */,
-				75B9A05B2C1734C000443A96 /* TimePickerIos.m */,
-				75B9A05D2C1734E500443A96 /* TimePickerIos.swift */,
-				75B9A05F2C17376800443A96 /* DateTimeBothPickerIos.m */,
-				75B9A0612C17379700443A96 /* DateTimeBothPickerIos.swift */,
 			);
 			name = Bridging;
 			sourceTree = "<group>";
@@ -135,6 +128,53 @@
 				CB3D9834EF80696B44A75001 /* libPods-Bridging-BridgingTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		753F37762C1851B20089B92D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				753F377E2C18538E0089B92D /* DateAndTimeBoth */,
+				753F377D2C1853500089B92D /* TimePicker */,
+				753F377C2C1852C60089B92D /* DatePicker */,
+				753F377B2C1852800089B92D /* Toast */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		753F377B2C1852800089B92D /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				753F37792C1851EF0089B92D /* ToastIos.swift */,
+				753F37772C1851D60089B92D /* ToastIos.m */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		753F377C2C1852C60089B92D /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				755240592C16D97C008A1EB2 /* DatePickerIos.swift */,
+				755240572C16D951008A1EB2 /* DatePickerIos.m */,
+			);
+			path = DatePicker;
+			sourceTree = "<group>";
+		};
+		753F377D2C1853500089B92D /* TimePicker */ = {
+			isa = PBXGroup;
+			children = (
+				75B9A05D2C1734E500443A96 /* TimePickerIos.swift */,
+				75B9A05B2C1734C000443A96 /* TimePickerIos.m */,
+			);
+			path = TimePicker;
+			sourceTree = "<group>";
+		};
+		753F377E2C18538E0089B92D /* DateAndTimeBoth */ = {
+			isa = PBXGroup;
+			children = (
+				75B9A0612C17379700443A96 /* DateTimeBothPickerIos.swift */,
+				75B9A05F2C17376800443A96 /* DateTimeBothPickerIos.m */,
+			);
+			path = DateAndTimeBoth;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -425,7 +465,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
-				758271852C1718F700F02EFA /* ToastIos.m in Sources */,
+				753F37782C1851D60089B92D /* ToastIos.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				75B9A0602C17376800443A96 /* DateTimeBothPickerIos.m in Sources */,
 				7552405A2C16D97C008A1EB2 /* DatePickerIos.swift in Sources */,
@@ -433,7 +473,7 @@
 				75B9A05C2C1734C000443A96 /* TimePickerIos.m in Sources */,
 				75B9A0622C17379700443A96 /* DateTimeBothPickerIos.swift in Sources */,
 				75B9A05E2C1734E500443A96 /* TimePickerIos.swift in Sources */,
-				758271872C17192300F02EFA /* ToastIos.swift in Sources */,
+				753F377A2C1851EF0089B92D /* ToastIos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
