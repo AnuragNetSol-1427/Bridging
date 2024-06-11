@@ -1,4 +1,4 @@
-import { View, Text, Pressable, StyleSheet, Platform } from 'react-native'
+import { Text, Pressable, StyleSheet, Platform } from 'react-native'
 import React from 'react'
 import { ToastIos, ToastModule } from '../../NativeModules'
 

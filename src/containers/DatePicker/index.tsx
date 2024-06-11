@@ -3,15 +3,17 @@ import React, { useState } from 'react'
 import { DatePickerModule, DatePickerIos } from '../../NativeModules'
 
 const index = () => {
-    const [selectedDate, setSelectedDate] = useState(null);
+    const [selectedDate, setSelectedDate] = useState<string | null>(null);
 
     const onPressBtnDatePickerOpen = () => {
-        Platform.OS == 'android' ? DatePickerModule.showDatePicker((date) => {
+        Platform.OS == 'android' ? DatePickerModule.showDatePicker((date:string) => {
             setSelectedDate(date);
+            console.log(`type of date===>`, typeof(date))
         })
         : 
-        DatePickerIos.showDatePicker((date) => {
+        DatePickerIos.showDatePicker((date:string) => {
             setSelectedDate(date);
+            console.log(`type of date===>`, typeof(date))
           });
     }
     return (

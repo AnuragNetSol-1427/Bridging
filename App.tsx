@@ -1,4 +1,4 @@
-import { View, Text, NativeModules, SafeAreaView, StyleSheet, Pressable, Platform } from 'react-native'
+import { SafeAreaView, StyleSheet, Platform } from 'react-native'
 import React from 'react'
 import Toast from './src/containers/Toast'
 import DatePicker from './src/containers/DatePicker'

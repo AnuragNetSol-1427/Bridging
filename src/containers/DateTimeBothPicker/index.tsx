@@ -3,10 +3,10 @@ import React, { useState } from 'react'
 import { DateTimeBothPickerIos } from '../../NativeModules'
 
 const index = () => {
-    const [selectedDateTime, setSelectedDateTime] = useState(null);
+    const [selectedDateTime, setSelectedDateTime] = useState<string | null>(null);
 
     const onPressBtnDateTimePickerOpen = () => {
-        Platform.OS == 'ios' && DateTimeBothPickerIos.showDateTimePicker((res) => {
+        Platform.OS == 'ios' && DateTimeBothPickerIos.showDateTimePicker((res:string) => {
             setSelectedDateTime(res);
           });
     }

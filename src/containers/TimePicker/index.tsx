@@ -3,15 +3,17 @@ import React, { useState } from 'react'
 import { TimePickerModule, TimePickerIos } from '../../NativeModules'
 
 const index = () => {
-    const [selectedTime, setSelectedTime] = useState(null);
+    const [selectedTime, setSelectedTime] = useState<string | null>(null);
 
     const onPressBtnTimePickerOpen = () => {
-        Platform.OS == 'android' ?  TimePickerModule.showTimePicker((time) => {
+        Platform.OS == 'android' ?  TimePickerModule.showTimePicker((time:string) => {
             setSelectedTime(time);
+            console.log(`type of time===>`, typeof(time))
           })
           :
-          TimePickerIos.showTimePicker((time) => {
+          TimePickerIos.showTimePicker((time:string) => {
             setSelectedTime(time);
+            console.log(`type of time===>`, typeof(time))
           });
     }
 
