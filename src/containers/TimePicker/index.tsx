@@ -8,12 +8,10 @@ const index = () => {
     const onPressBtnTimePickerOpen = () => {
         Platform.OS == 'android' ?  TimePickerModule.showTimePicker((time:string) => {
             setSelectedTime(time);
-            console.log(`type of time===>`, typeof(time))
           })
           :
           TimePickerIos.showTimePicker((time:string) => {
             setSelectedTime(time);
-            console.log(`type of time===>`, typeof(time))
           });
     }
 

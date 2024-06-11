@@ -8,12 +8,10 @@ const index = () => {
     const onPressBtnDatePickerOpen = () => {
         Platform.OS == 'android' ? DatePickerModule.showDatePicker((date:string) => {
             setSelectedDate(date);
-            console.log(`type of date===>`, typeof(date))
         })
         : 
         DatePickerIos.showDatePicker((date:string) => {
             setSelectedDate(date);
-            console.log(`type of date===>`, typeof(date))
           });
     }
     return (
